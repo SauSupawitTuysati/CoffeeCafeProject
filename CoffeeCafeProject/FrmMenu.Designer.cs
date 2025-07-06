@@ -136,6 +136,7 @@
             this.lvShowAllMenu.Size = new System.Drawing.Size(423, 218);
             this.lvShowAllMenu.TabIndex = 39;
             this.lvShowAllMenu.UseCompatibleStateImageBehavior = false;
+            this.lvShowAllMenu.ItemActivate += new System.EventHandler(this.lvShowAllMenu_ItemActivate);
             // 
             // pictureBox12
             // 
@@ -194,6 +195,7 @@
             this.btDelete.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btUpdate
             // 
@@ -206,6 +208,7 @@
             this.btUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // btSave
             // 
