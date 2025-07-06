@@ -116,6 +116,7 @@
             this.tbMenuPrice.Name = "tbMenuPrice";
             this.tbMenuPrice.Size = new System.Drawing.Size(181, 20);
             this.tbMenuPrice.TabIndex = 37;
+            this.tbMenuPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMenuPrice_KeyPress);
             // 
             // btSelectMenuImage
             // 
@@ -125,6 +126,7 @@
             this.btSelectMenuImage.TabIndex = 38;
             this.btSelectMenuImage.Text = "...";
             this.btSelectMenuImage.UseVisualStyleBackColor = true;
+            this.btSelectMenuImage.Click += new System.EventHandler(this.btSelectMenuImage_Click);
             // 
             // lvShowAllMenu
             // 
@@ -166,6 +168,7 @@
             this.btCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btClose
             // 
@@ -178,6 +181,7 @@
             this.btClose.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btClose.UseVisualStyleBackColor = true;
+            this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // btDelete
             // 
@@ -214,6 +218,7 @@
             this.btSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // label4
             // 
@@ -261,6 +266,7 @@
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu - SAU Coffee Cafe V.1.0";
+            this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.groupbox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMenuImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
