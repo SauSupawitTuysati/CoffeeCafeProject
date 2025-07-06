@@ -289,6 +289,11 @@ namespace CoffeeCafeProject
             {
                 e.Handled = true;
             }
+
+            if (char.IsDigit(e.KeyChar) && ((sender as TextBox).Text.Length >= 10))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
